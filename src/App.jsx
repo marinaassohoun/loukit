@@ -6,7 +6,6 @@ import s from "./style.module.css";
 import { TVShowDetail } from "./components/TVShowDetail/TVShowDetail";
 import { Logo } from "./components/Logo/Logo";
 import logo from "./assets/images/logo.png";
-import { TVShowListItem } from "./components/TVShowListItem/TVShowListItem";
 import TVShowList from "./components/TVShowList/TVShowList";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 
@@ -21,7 +20,9 @@ export function App() {
         setCurrentTVShow(populars[0]);
       }
     } catch (error) {
-      alert(error.message + "erreur durant la recherche des séries populaires");
+      alert(
+        error.message + ". Erreur durant la recherche des séries populaires"
+      );
     }
   }
 
@@ -33,7 +34,7 @@ export function App() {
       }
     } catch (error) {
       alert(
-        error.message + "Erreur durant la recherche des séries recommandées"
+        error.message + ". Erreur durant la recherche des séries recommandées"
       );
     }
   }
@@ -45,7 +46,7 @@ export function App() {
         setCurrentTVShow(searchResponse[0]);
       }
     } catch (error) {
-      alert(error.message + "erreur durant la recherche de la série");
+      alert(error.message + ". Erreur durant la recherche de la série");
     }
   }
   useEffect(() => {

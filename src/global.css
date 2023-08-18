@@ -1,0 +1,14 @@
+body {
+  color: white;
+  font-family: Maximum Impact;
+}
+
+/* lors que la scrollbar ne bouge pas elle n'est pas visible*/
+::-webkit-scrollbar {
+  background: transparent;
+}
+/* lors que la scrollbar bouge et est horizontal */
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #c2c2c2;
+  border-radius: 10px;
+}

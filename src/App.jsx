@@ -16,6 +16,7 @@ export function App() {
   async function fetchPopulars() {
     try {
       const populars = await TVShowAPI.fetchPopulars();
+
       if (populars.length > 0) {
         setCurrentTVShow(populars[0]);
       }
@@ -81,7 +82,10 @@ export function App() {
             </div>
           </div>
           <div className="col-md-12 col-lg-4">
-            <SearchBar onSubmit={searchTVShow} />
+            <SearchBar
+              tvShowList={recommendationList}
+              onSubmit={searchTVShow}
+            />
           </div>
         </div>
       </div>

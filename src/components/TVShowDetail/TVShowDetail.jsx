@@ -13,8 +13,8 @@ export function TVShowDetail({ tvShow }) {
       </div>
       <div className={s.rating_container}>
         <FiveStarRating rating={rating} />
+        <div className={s.rating}>{rating} / 5</div>
       </div>
-      <div className={s.rating}>{rating} / 5</div>
       <div className={s.overview}>{tvShow.overview}</div>
     </div>
   );

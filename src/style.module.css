@@ -1,6 +1,6 @@
 .main_container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   padding: 25px;
   flex-direction: column;
   background-color: black;
@@ -8,13 +8,10 @@
 
 .header {
   flex: 2;
-  /* background-color: red;  */
 }
 .tv_show_detail {
   flex: 4;
-  /* background-color: blue; */
 }
 .recommendations {
   flex: 2;
-  /* background-color: green; */
 }

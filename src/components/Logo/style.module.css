@@ -1,3 +1,6 @@
+.logo__wrapper {
+  padding-bottom: 2em;
+}
 .container {
   display: flex;
 }

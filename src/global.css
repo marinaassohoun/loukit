@@ -1,14 +1,15 @@
 body {
   color: white;
-  font-family: Maximum Impact;
+  font-family: Maximum Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 /* lors que la scrollbar ne bouge pas elle n'est pas visible*/
 ::-webkit-scrollbar {
-  background: transparent;
+  background: rgba(63, 63, 63, 0.6);
+  border-radius: 1em;
 }
 /* lors que la scrollbar bouge et est horizontal */
-::-webkit-scrollbar-thumb:horizontal {
+::-webkit-scrollbar-thumb {
   background-color: #c2c2c2;
-  border-radius: 10px;
+  border-radius: 1em;
 }

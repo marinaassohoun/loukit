@@ -8,7 +8,7 @@ export class TVShowAPI {
     const response = await axios.get(
       `${BASE_URL}tv/popular?api_key=${process.env.REACT_APP_API_KEY_PARAM}`
     );
-    // console.log(response.data.results);
+    // console.log("fetchpopulars", response.data.results);
 
     return response.data.results;
   }
@@ -24,7 +24,7 @@ export class TVShowAPI {
     const response = await axios.get(
       `${BASE_URL}search/tv?api_key=${process.env.REACT_APP_API_KEY_PARAM}&query=${title}`
     );
-    // console.log(response.data.results);
+    // console.log("search", response.data.results);
 
     return response.data.results;
   }
